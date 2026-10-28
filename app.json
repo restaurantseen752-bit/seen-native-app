@@ -1,24 +1,19 @@
 {
   "expo": {
-    "name": "SeenNativeApp",
-    "slug": "SeenNativeApp",
+    "name": "مطعم سين",
+    "slug": "seen-restaurant",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "icon": "./logo.png",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+        "foregroundImage": "./logo.png",
+        "backgroundColor": "#0a0a0a"
+      },
+      "package": "com.seen.restaurant"
     }
   }
 }
