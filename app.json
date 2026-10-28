@@ -4,26 +4,29 @@
     "slug": "seen-restaurant",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./icon_padded.png",
     "userInterfaceStyle": "dark",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./logo.png",
+        "foregroundImage": "./icon_padded.png",
         "backgroundColor": "#0a0a0a"
       },
       "package": "com.seen.restaurant"
     },
-    "plugins": [],
-    "splash": {
-      "image": "./logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0a0a0a"
-    },
-    "icon": "./logo.png"
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./splash_padded.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0a0a0a"
+        }
+      ]
+    ]
   }
 }

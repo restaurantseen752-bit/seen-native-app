@@ -33,6 +33,9 @@ jobs:
       - name: Fix dependencies
         run: npx expo install --fix
 
+      - name: Install splash screen
+        run: npx expo install expo-splash-screen
+
       - name: Prebuild for Android
         run: npx expo prebuild --platform android --clean --no-install
 
