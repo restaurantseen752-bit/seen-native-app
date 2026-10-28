@@ -18,10 +18,16 @@
       },
       "package": "com.seen.restaurant"
     },
-    "splash": {
-      "image": "./logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0a0a0a"
-    }
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./logo.png",
+          "imageWidth": 250,
+          "resizeMode": "contain",
+          "backgroundColor": "#0a0a0a"
+        }
+      ]
+    ]
   }
 }
