@@ -30,6 +30,9 @@ jobs:
         with:
           packages: 'platform-tools'
 
+      - name: Fix dependencies
+        run: npx expo install --fix
+
       - name: Prebuild for Android
         run: npx expo prebuild --platform android --no-install
 
@@ -37,7 +40,7 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleRelease
+          ./gradlew assembleRelease --warning-mode=none
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
