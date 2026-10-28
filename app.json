@@ -4,16 +4,24 @@
     "slug": "seen-restaurant",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./logo.png",
     "userInterfaceStyle": "dark",
-    "assetBundlePatterns": ["**/*"],
-    "ios": { "supportsTablet": true },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./logo.png",
         "backgroundColor": "#0a0a0a"
       },
       "package": "com.seen.restaurant"
+    },
+    "splash": {
+      "image": "./logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
     }
   }
 }
